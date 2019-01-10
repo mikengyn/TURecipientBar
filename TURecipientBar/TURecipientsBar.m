@@ -131,9 +131,9 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.2 options:0 animations:animations completion:nil];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.2 options:0 animations:animations completion:nil];
 		} else {
-			[UIView animateWithDuration:0.5 animations:animations];
+			[UIView animateWithDuration:0.3 animations:animations];
 		}
 	} else {
 		[_recipientViews addObject:recipientView];
@@ -179,9 +179,9 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.2 options:0 animations:animations completion:completion];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:0 animations:animations completion:completion];
 		} else {
-			[UIView animateWithDuration:0.5 animations:animations completion:completion];
+			[UIView animateWithDuration:0.3 animations:animations completion:completion];
 		}
 	} else {
 		[recipientView removeFromSuperview];
@@ -914,7 +914,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	CGRect bounds = CGRectMake(0, 0, 29, 25);
 	UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 	
-	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(bounds, 0.5, 0.5) cornerRadius:8];
+	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(bounds, 0.5, 0.5) cornerRadius:16];
 	[[UIColor blackColor] setStroke];
 	path.lineWidth = 1;
 	[path stroke];
@@ -938,7 +938,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	CGRect bounds = CGRectMake(0, 0, 29, 25);
 	UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 	
-	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:bounds cornerRadius:8];
+	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:bounds cornerRadius:16];
 	[[UIColor blackColor] setFill];
 	[path fill];
 	
