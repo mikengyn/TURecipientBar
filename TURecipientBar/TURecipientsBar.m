@@ -914,7 +914,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	CGRect bounds = CGRectMake(0, 0, 29, 25);
 	UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 	
-	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(bounds, 0.5, 0.5) cornerRadius:12];
+	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(bounds, 0.5, 0.5) cornerRadius:8];
 	[[UIColor blackColor] setStroke];
 	path.lineWidth = 1;
 	[path stroke];
@@ -938,7 +938,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	CGRect bounds = CGRectMake(0, 0, 29, 25);
 	UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 	
-	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:bounds cornerRadius:12];
+	UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:bounds cornerRadius:8];
 	[[UIColor blackColor] setFill];
 	[path fill];
 	
