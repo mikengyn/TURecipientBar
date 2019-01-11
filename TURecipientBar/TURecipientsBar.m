@@ -429,8 +429,8 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	_animatedRecipientsInAndOut = YES;
 	_recipientBackgroundImages = [NSMutableDictionary new];
 	_recipientTitleTextAttributes = [NSMutableDictionary new];
-	
-	_recipientContentEdgeInsets = UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0);
+	d
+	_recipientContentEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0);
 	
 	self.contentSize = self.bounds.size;
 	
@@ -554,7 +554,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	
 	if (CGRectGetMaxX(recipientViewFrame) > [self _safeBounds].size.width - 6.0) {
 		recipientViewFrame.origin.x = CGRectGetMinX([self _safeBounds]) + 15.0;
-		recipientViewFrame.origin.y += TURecipientsLineHeight - 8.0;
+		recipientViewFrame.origin.y += TURecipientsLineHeight - 10.0;
 	}
 	
 	return recipientViewFrame;
