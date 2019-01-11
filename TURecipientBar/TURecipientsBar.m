@@ -13,7 +13,7 @@
 #import "TURecipientButton.h"
 
 
-#define TURecipientsLineHeight 44.0
+#define TURecipientsLineHeight 20.0
 #define TURecipientsPlaceholder @"\u200B"
 
 void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
