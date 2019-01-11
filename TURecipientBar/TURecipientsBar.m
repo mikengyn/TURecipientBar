@@ -131,7 +131,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:0 animations:animations completion:nil];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:0 animations:animations completion:nil];
 		} else {
 			[UIView animateWithDuration:0.3 animations:animations];
 		}
@@ -179,7 +179,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:0 animations:animations completion:completion];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:0 animations:animations completion:completion];
 		} else {
 			[UIView animateWithDuration:0.3 animations:animations completion:completion];
 		}
