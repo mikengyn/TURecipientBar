@@ -13,7 +13,7 @@
 #import "TURecipientButton.h"
 
 
-#define TURecipientsLineHeight 20.0
+#define TURecipientsLineHeight 44.0
 #define TURecipientsPlaceholder @"\u200B"
 
 void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
@@ -554,7 +554,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	
 	if (CGRectGetMaxX(recipientViewFrame) > [self _safeBounds].size.width - 6.0) {
 		recipientViewFrame.origin.x = CGRectGetMinX([self _safeBounds]) + 15.0;
-		recipientViewFrame.origin.y += TURecipientsLineHeight - 4.0;
+		recipientViewFrame.origin.y += TURecipientsLineHeight - 8.0;
 	}
 	
 	return recipientViewFrame;
