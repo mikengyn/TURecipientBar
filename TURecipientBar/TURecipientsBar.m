@@ -118,7 +118,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	if (self.animatedRecipientsInAndOut) {
 		recipientView.frame = [self _frameFoRecipientView:recipientView afterView:_recipientViews.lastObject];
 		recipientView.alpha = 0.0;
-		recipientView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+		recipientView.transform = CGAffineTransformMakeScale(0.5, 0.5);
 		
 		// add this after getting the frame, otherwise it will base the frame on itself
 		[_recipientViews addObject:recipientView];
@@ -131,7 +131,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.2 options:0 animations:animations completion:nil];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:0 animations:animations completion:nil];
 		} else {
 			[UIView animateWithDuration:0.3 animations:animations];
 		}
@@ -168,7 +168,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	
 	if (self.animatedRecipientsInAndOut) {
 		void(^animations)(void) = ^{
-			recipientView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+			recipientView.transform = CGAffineTransformMakeScale(0.5, 0.5);
 			recipientView.alpha = 0.0;
 			
 			[self layoutIfNeeded];
@@ -179,7 +179,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 		};
 		
 		if ([UIView respondsToSelector:@selector(animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)]) {
-			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:0 animations:animations completion:completion];
+			[UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:0 animations:animations completion:completion];
 		} else {
 			[UIView animateWithDuration:0.3 animations:animations completion:completion];
 		}
@@ -430,7 +430,7 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	_recipientBackgroundImages = [NSMutableDictionary new];
 	_recipientTitleTextAttributes = [NSMutableDictionary new];
 	
-	_recipientContentEdgeInsets = UIEdgeInsetsMake(0.0, 9.0, 0.0, 9.0);
+	_recipientContentEdgeInsets = UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0);
 	
 	self.contentSize = self.bounds.size;
 	
