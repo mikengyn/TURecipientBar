@@ -429,7 +429,6 @@ void *TURecipientsSelectionContext = &TURecipientsSelectionContext;
 	_animatedRecipientsInAndOut = YES;
 	_recipientBackgroundImages = [NSMutableDictionary new];
 	_recipientTitleTextAttributes = [NSMutableDictionary new];
-	d
 	_recipientContentEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0);
 	
 	self.contentSize = self.bounds.size;
